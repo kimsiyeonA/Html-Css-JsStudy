@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      div, section, nav {
+        border:10px dotted red;
+        margin:50px;
+        padding:20px;
+      }
+
+      a {
+        background-color:gold;
+      }
+
+      section article {
+        width:200px;
+        height:200px;
+        background-color:blue;
+      }
+      div{
+        text-align: start;
+      }
+      section{
+        text-align: center;
+      }
+      nav{
+        text-align: end;
+      }
+
+      /*
+      text-align는
+      절대로 자신을 정렬하는게 아니라,
+      자신이 가지고 있는 텍스트를 정렬한다.
+      글자가 아닌 엘리먼트도 정렬할 수 있을까? 
+      힌트 : display:inline-block 하면 엘리먼트가 `텍스트 화` 된다. */ 
+    </style>
+  </head>
+  <body>
+    문제. text-align 은 대상 엘리먼트의 글자와 자식 inline 요소만 정렬한다
+    <div>
+      <a href="http://www.naver.com" target="_blank">네이버로 이동</a>
+    </div>
+    
+    <section>
+      <a href="http://www.google.com" target="_blank">구글로 이동</a>
+      <a href="http://www.google.com" target="_blank">구글로 이동</a>
+      <article></article>
+    </section>
+    
+    <nav>
+      <a href="http://www.daum.net" target="_blank">다음으로 이동</a>
+    </nav>
+  
+  </body>
+</html>
