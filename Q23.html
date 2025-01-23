@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .menu {
+        text-align: center;
+      }
+      .menu > div {
+        background-color: #afafaf;
+        display: inline-block;
+        padding : 0 15px;
+        border-radius: 10px;
+      }
+      .menu > div > div {
+        display: inline-block;
+      }
+      .menu > div > div > a {
+        display: block;
+        padding: 10px 20px;
+        font-size: 1.3rem;
+        font-weight: bold;
+      }
+      .menu > div > div:hover > a {
+        background-color: black;
+        color : white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>문제 : 단순한 메뉴 구현</h1>
+    <div class="menu">
+      <div>
+        <div><a href="#">아이템 1</a></div>
+        <div><a href="#">아이템 2</a></div>
+        <div><a href="#">아이템 3</a></div>
+        <div><a href="#">아이템 4</a></div>
+      </div>
+    </div>
+  </body>
+</html>
