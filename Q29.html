@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .inline-grid {
+        font-size: 0;
+      }
+      .inline-grid-img {
+        font-size: 0;
+      }
+      .inline-grid-img > * {
+        font-size: 1rem;
+        vertical-align: top;
+        display: inline-block;
+        box-sizing: border-box;
+        /* background-color: blueviolet; */
+      }
+      .inline-grid-img > img:first-child {
+        width:50%;
+      }
+      .inline-grid-img > img:nth-child(2) {
+        padding: 0 0 0 20px;
+        width:25%;
+      }
+      .inline-grid-img > img:nth-child(3) {
+        padding: 0 0 0 20px;
+        width:25%;
+      }
+      .inline-grid > ul > * {
+        font-size: 1rem;
+        vertical-align: top;
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-width: 0 1px;
+        /* background-color: blueviolet; */
+      }
+      .menu {
+        text-align: center;
+      }
+
+      .inline-grid > ul > li {
+        width: calc(100% / 7 * 1);
+        display: inline-block;
+      }
+      .inline-grid > ul > li:first-child {
+        border-width: 0 1px 0 2px;
+      }
+      .inline-grid > ul > li:last-child {
+        border-width: 0 2px 0 1px;
+      }
+      .con {
+        width: 980px;
+        height: 100vh;
+        /* background-color: aquamarine; */
+        margin: 0 auto;
+      }
+      .header {
+        padding: 20px 0;
+        text-align: center;
+      }
+      .header > .logo {
+        font-size: 5rem;
+        letter-spacing: -5px;
+        font-weight: bold;
+      }
+      .header > .menu {
+        font-weight: bold;
+      }
+
+      .main > div:first-child{
+        margin: 0 0 20px 0;
+      }
+      .main > div:nth-child(2){
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="con">
+      <div class="header">
+        <div class="logo">BNX</div>
+        <nav class="menu inline-grid">
+          <ul class="">
+            <li>BRAND</li>
+            <li>VISUAL</li>
+            <li>STYLE</li>
+            <li>MEDIA</li>
+            <li>NEWS</li>
+            <li>STORE</li>
+            <li>CUSTOMER</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main">
+        <div>
+          <img src="https://picsum.photos/id/287/980/430">  
+        </div>
+        <div class="inline-grid-img">
+        <img src="https://picsum.photos/id/281/480/480">
+        <img src="https://picsum.photos/id/288/230/230">
+        <img src="https://picsum.photos/id/283/230/230">
+       </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
